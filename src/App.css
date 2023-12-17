@@ -1,0 +1,36 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc; /* Mid Grey Color */
+}
+
+.App {
+  text-align: center;
+}
+
+nav {
+  background-color: #ccc; /* Use the same color as body */
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-right: 30px; /* Adjust the gap as needed */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  margin: 20px;
+}

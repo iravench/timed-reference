@@ -1,0 +1,89 @@
+/* File: src/components/Session.css */
+
+.session-container {
+  display: flex;
+  margin: 25px;
+}
+
+.sidebar {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.timer-settings {
+  margin-bottom: 20px;
+}
+
+.timer-settings label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.timer-settings button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.timer-settings button.selected {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.file-input {
+  margin-top: 10px;
+}
+
+.timer-countdown {
+  margin-top: 10px;
+  margin-bottom: 0; /* Added margin bottom */
+  color: red; /* Added red color */
+}
+
+.timer-countdown p {
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+.button-container button:first-child {
+  margin-top: 10px; /* Added margin top to the first button (Start Session) */
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Occupy remaining space */
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 720px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+  .session-container {
+    flex-direction: column; /* Switch to column layout for smaller screens */
+  }
+
+  .image-container {
+    order: -1; /* Move image to the top for smaller screens */
+    margin-bottom: 20px; /* Add some spacing between image and sidebar */
+  }
+
+  .sidebar {
+    margin-right: 0;
+  }
+}
